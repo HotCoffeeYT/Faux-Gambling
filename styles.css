@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.rotateWrapping {
+  background-color: #54AD4E;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.rotate {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: rotate 10s linear infinite;
+}
+
+.rotate p {
+  display: inline-block;
+  font-family: "Cascadia Code", serif;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.userDetails {
+  display: flex;
+  background-color: #3C7A38;
+  justify-content: space-between;
+}
+
+.username,
+.credits {
+  margin: 25px;
+  background-color: #1F3F2E;
+  overflow: hidden;
+  padding: 10px;
+  border: 3px solid #1F3F2E;
+  border-radius: 10px;
+  color: white;
+}
+
+.chest {
+  background-color: #6DA87B;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.ending {
+  display: flex;
+  background-color: #939E32;
+  justify-content: space-around;
+}
+
+.wonAmount,
+.playAgain {
+  margin: 25px;
+  padding: 25px;
+  border: 3px solid #1F3F2E;
+  border-radius: 10px;
+}
+
+.wonAmount {
+  background-color: #2A9B1D;
+  text-align: center;
+}
+
+.playAgain {
+  background-color: #D8170D;
+}
+
+.retry {
+  background-color: #D8170D;
+  cursor: pointer;
+  border: none;
+  padding: 15px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
