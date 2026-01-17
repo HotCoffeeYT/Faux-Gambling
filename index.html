@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <title>Waste Your Money!!</title>
   </head>
   <body>
-    <div class="rotateWrapping">
-      <div class="rotate">
+    <div id="rotateWrapping">
+      <div id="rotate">
         <p>
             MAKE BIG BUCK GET RICH OR LOSE TRYING YOU CAN WIN IF YOU TRY WINNERS NEVER QUIT NEXT ONE IS A WINNER I BET KEEP TRYING 
         </p>
@@ -16,17 +17,21 @@
         </p>
       </div>
     </div>
-    <div class="userDetails">
-      <div class="username">Anonymous</div>
-      <div class="credits">Credits:
-        <div class="creditAmount">0</div>
+    <div id="userDetails">
+      <div id="username"></div>
+      <div id="credits">Credits:
+        <div id="creditAmount">0</div>
       </div>
     </div>
-    <div class="chest"><img src="media/ChestClosed.png"></div>
-    <div class="ending">
-      <div class="wonAmount">placeholder</div>
-      <div class="playAgain">
-        <button class="retry" type="button">Play again?</button>
+    <div id="chest">
+      <button id="gamble" width="512">
+        <video id="ChestVideo"> <source src="media/ChestPlay.webm"></video>
+      </button>
+    </div>
+    <div id="ending">
+      <div id="wonAmount">placeholder</div>
+      <div id="playAgain">
+        <button id="retry" type="button">Play again?</button>
       </div>
       <script src="main.js"></script>
   </body>

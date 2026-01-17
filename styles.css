@@ -3,24 +3,24 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: "Cascadia Code", serif;
 }
 
-.rotateWrapping {
+#rotateWrapping {
   background-color: #54AD4E;
   max-width: 100%;
   overflow: hidden;
 }
 
-.rotate {
+#rotate {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   animation: rotate 10s linear infinite;
 }
 
-.rotate p {
+#rotate p {
   display: inline-block;
-  font-family: "Cascadia Code", serif;
 }
 
 @keyframes rotate {
@@ -32,14 +32,14 @@ body {
   }
 }
 
-.userDetails {
+#userDetails {
   display: flex;
   background-color: #3C7A38;
   justify-content: space-between;
 }
 
-.username,
-.credits {
+#username,
+#credits {
   margin: 25px;
   background-color: #1F3F2E;
   overflow: hidden;
@@ -49,39 +49,42 @@ body {
   color: white;
 }
 
-.chest {
+#chest {
   background-color: #6DA87B;
   display: flex;
   justify-content: center;
   align-self: stretch;
 }
 
-.ending {
+#ending {
   display: flex;
   background-color: #939E32;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.wonAmount,
-.playAgain {
+#wonAmount,
+#playAgain {
   margin: 25px;
   padding: 25px;
   border: 3px solid #1F3F2E;
   border-radius: 10px;
 }
 
-.wonAmount {
+#wonAmount {
   background-color: #2A9B1D;
   text-align: center;
+  font-size: 30px;
 }
 
-.playAgain {
+#playAgain {
   background-color: #D8170D;
 }
 
-.retry {
+#retry {
   background-color: #D8170D;
   cursor: pointer;
+  font-size: 30px;
   border: none;
   padding: 15px 6px;
   text-align: center;
