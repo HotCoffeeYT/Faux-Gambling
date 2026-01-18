@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cascadia Code", serif;
+  background-color: #4EFF59;
+
 }
 
 #rotateWrapping {
@@ -32,72 +34,34 @@ body {
   }
 }
 
-#userDetails {
+#header {
   display: flex;
   background-color: #3C7A38;
   justify-content: space-between;
 }
 
-#username,
-#credits {
-  margin: 25px;
-  background-color: #1F3F2E;
-  overflow: hidden;
-  padding: 10px;
-  border: 3px solid #1F3F2E;
-  border-radius: 10px;
-  color: white;
+#headerCenter {
+  display: flex;
+  background-color: #3C7A38;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#chest {
-  background-color: #6DA87B;
+#pageList {
   display: flex;
   justify-content: center;
-  align-self: stretch;
+  align-items: center;
+  background-color: #2DFF54;
 }
 
-#gamble {
-  flex: 1;
-  cursor: pointer;
+.listCenter {
+  list-style: none;
+  padding: 20px;
+  margin: 30px;
 }
 
-#ChestVideo {
-  flex: 1;
-  max-width: 100%;
-}
-
-#ending {
-  display: flex;
-  background-color: #939E32;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#wonAmount,
-#playAgain {
-  margin: 25px;
-  padding: 25px;
-  border: 3px solid #1F3F2E;
-  border-radius: 10px;
-}
-
-#wonAmount {
-  background-color: #2A9B1D;
-  text-align: center;
-  font-size: 30px;
-}
-
-#playAgain {
-  background-color: #D8170D;
-}
-
-#retry {
-  background-color: #D8170D;
-  cursor: pointer;
-  font-size: 30px;
-  border: none;
-  padding: 15px 6px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.listCenter li {
+  padding: 20px;
+  background-color: #64FF5B;
 }
