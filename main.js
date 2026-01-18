@@ -6,12 +6,20 @@ document.querySelector("#creditAmount").innerHTML = credits;
 
 const lever = document.querySelector("#gamble");
 
-const video = document.querySelector("#ChestVideo");
+let ended = true;
+video = document.querySelector("#ChestVideo").addEventListener('ended', () => {
+  ended = true;
+});
+video = document.querySelector("#ChestVideo").addEventListener('playing', () => {
+  ended = false;
+});
 
 
 lever.addEventListener('click', () => {
-   if (credits >= 0) {
-   credits = lesdoit(credits);
+  if (ended == true) {
+    if (credits >= 0) {
+      credits = lesdoit(credits);
+    }
   }
   
 });
